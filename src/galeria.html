@@ -12,7 +12,7 @@
     <title>VazCarr | Galeria</title>
 </head>
 <body>
-    <div class="loader">
+    <div id="loader" class="loader">
         <h2 class="loading__text">
                 VazCarr
         </h2>
@@ -25,19 +25,26 @@
                         VazCarr
                     </a>
                 </h2>
-                <h2 class="page__title">Galeria</h2>
-                <div class="form-actions">
-                    <a href="./404.html">Login</a>
-                    <span>|</span>
-                    <a href="./404.html">Create account</a>
+                <div class="page__title__container">
+                    <h2 class="page__title">Galeria</h2>
                 </div>
-                <div class="account">
-                    <span> <!-- inline -->
-                        <img src="https://images.unsplash.com/photo-1524622227968-652deb05f547?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="user-pic">
-                        <p>Vazcarr</p> <!-- username -->
-                    </span>
-                    <span>|</span>
-                    <button>Log out</button>
+                <div class="flex space-between align-center">
+                    <div class="contact__btn">
+                        <a href="./contacto.html">Contacto</a>
+                    </div>
+                    <div id="form-actions" class="form-actions">
+                        <a href="./login.html">Login</a>
+                        <span>|</span>
+                        <a href="./signup.html">Create account</a>
+                    </div>
+                    <div id="account" class="account">
+                        <span> <!-- inline -->
+                            <img src="https://images.unsplash.com/photo-1524622227968-652deb05f547?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="user-pic">
+                            <p>Vazcarr</p> <!-- username -->
+                        </span>
+                        <span>|</span>
+                        <button id="logoutBtn">Log out</button>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -64,7 +71,9 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-                <div class="qr-container"></div>
+                <div class="qr-container">
+                    <img src="qr/Galeria.png" alt="Galeria-qr">
+                </div>
             </div>
         </section>
     </main>

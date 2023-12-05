@@ -19,6 +19,33 @@ p{
     padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4{
+    margin: 0;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-family: sans-serif;
+}
+
+.text-xl {
+    font-size: 4rem;
+}
+
+.text-md {
+    font-size: 1.5rem;
+}
+
+.cursive {
+    font-weight: 400;
+    font-family: 'Bonheur Royale', cursive;
+}
+
 .spacer{
     padding: 20px 0;
 }
@@ -31,11 +58,10 @@ p{
     height: 100vh;
     background-color: #D9D9D9;
     z-index: 99999;
-    display: flex;
     justify-content: center;
     align-items: center;
     transition: all 200 ease-in-out;
-    display: none;
+    display: flex;
 }
 
 .loading__text{
@@ -72,8 +98,7 @@ main section {
 }
 
 .account {
-    /* display: flex; */
-    display: none;
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
@@ -103,7 +128,11 @@ main section {
 }
 
 .form-actions span{
-    margin: 0 20px;
+    margin: 0 5px;
+}
+
+.contact__btn {
+    margin-right: 60px;
 }
 
 .page__title {
@@ -205,6 +234,12 @@ header nav {
     display: block;
 }
 
+.layout-flex {
+    padding: 0 39px;
+    flex: 1;
+    display: flex;
+}
+
 .not-found {
     display: flex;
     justify-content: center;
@@ -228,8 +263,8 @@ header nav {
 }
 
 .carousel {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    /*height: 100%; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -259,6 +294,21 @@ header nav {
 
 .qr-container {
     padding: 20px 0;
+    text-align: center;
+}
+
+.qr-container img {
+    width: 200px;
+}
+
+.qr-centered {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.qr-centered img {
+    width: 300px;
 }
 
 /* ILUSTRACIONES */
@@ -319,6 +369,160 @@ header nav {
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
+}
+
+.audiovisual {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.audiovisual-tracks {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.audiovisual-tracks div{
+    width: 80%;
+}
+
+.audiovisual-tracks div audio {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+}
+
+.audiovisual-collaborators {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: flex;
+    align-items: flex-end;
+}
+
+.collaborators-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 16px;
+}
+
+.collaborators-container img {
+    width: 50%;
+}
+
+.collaborators-container img:first-child {
+    margin-bottom: 40px;
+}
+
+.audiovisual-qr {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+.w-80p{
+    width: 80%;
+}
+
+.w-90p{
+    width: 90%;
+}
+
+.w-full{
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.form-base {
+    width: 30%;
+}
+
+.input__base {
+    display: block;
+    border: 2px solid #fafafa;
+    padding: 16px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.input__text{
+    height: 64px;
+    padding: 20px 16px;
+}
+
+.input__text:focus-visible,
+.input__text:focus{
+    border: none;
+    outline: none;
+}
+
+.input__submit {
+    cursor: pointer;
+    border: none;
+    background-color: #bd6b91;
+    color: #ddd;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.input__submit:hover{
+    background-color: #ad6185;
+}
+
+.input__group:first-child{
+    margin-right: 8px;
+}
+
+.error {
+    width: 30%;
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: rgb(214, 155, 155);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: rgb(78, 40, 40);
+    border: 2px solid rgb(201, 69, 69);
+    display: none;
 }
 
 /* ANIMATIONS */
